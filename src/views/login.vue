@@ -28,9 +28,12 @@
             <b-form-input id="mobile" type="number"></b-form-input>
           </b-form-group>
           <div class="mt-3">
-            <router-link to="signUp" class="mr-3">New User</router-link>
-
-            <button class="btn btn-primary">Login</button>
+            <router-link :to="{name:'signUp'}" class="mr-3">New User</router-link>
+            <button>
+              <router-link to="userList" class="mr-3">Login</router-link>
+            </button>
+            <router-link to="forgetPassword">Forget Password?</router-link>
+            <!-- <button class="btn btn-primary">Login</button> -->
           </div>
         </b-form>
       </div>
